@@ -1,2 +1,6 @@
-# web-231
-BUWEBDEV web-231 repository
+# WEB 231 Enterprise JavaScript I
+
+## Contributors
+* Professor Richard Krasso
+* Tierre Green
+
