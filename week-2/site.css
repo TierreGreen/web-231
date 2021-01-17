@@ -34,12 +34,21 @@ h1, h2, h3, h4 {
 }
 
 /**
+*unordered list styles as follows:
+*dotted border, one-pixel thickness, and red
+*/
+
+.ulBorder {
+    border: dotted 1px red;
+}
+
+/**
     header styles via class app-header per course standard.
 */
 .app-header {
     background-color: #3c275a;
     color: white;
-    text-align: left;
+    text-align: center;
 }
 
 /**
