@@ -7,13 +7,32 @@
 ;===========================================
 */
 
+/*
+============================================
+; Title:  Green-exercise2.js
+; Author: Tierre Green
+; Date:  17 January 2021
+; Description: Displays message to the console window
+;===========================================
+*/
+
 /**
 ============================================
-; Title:  JavaScript Where To
-; Author: w3schools.com
-; Date:  17 January 2021
+; Title: JavaScript toLocaleString() Method
+; Author: https://www.w3schools.com/jsref/jsref_tolocalestring.asp
+; Date: 10 January 2021
 ; Modified By: Tierre Green
-; Description: calling js statement by using document.getElementById
+; Description: Locale date js from w3schools.com
+;===========================================
+ */
+
+ /**
+============================================
+; Title: JavaScript toFixed() Method
+; Author: https://www.w3schools.com/jsref/jsref_tofixed.asp
+; Date: 10 January 2021
+; Modified By: Tierre Green
+; Description: fixed decimal point js from w3schools.com
 ;===========================================
  */
 
