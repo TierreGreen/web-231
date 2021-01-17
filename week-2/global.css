@@ -8,7 +8,7 @@ body {
 /**
 * styling for return-home anchor tag linked back to the landing page.
 * Changes color, text decoration to none, and sets hover background color and text.
-* Establishes a text color for the visited link for exercise 2.2
+* Establishes a text color for the visited link.
 */
 .return-home {
     color: #4F3674;
@@ -24,9 +24,6 @@ body {
     color: #3C275A
 }
 
-/**
-* Start of Global css styles created in web200
-*/
 header {
     background-color: #3c275a;
     color: white;
