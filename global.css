@@ -25,8 +25,9 @@ body {
 }
 
 /**
-* Start of Global css styles created in web200
-*/
+* Start of Global css styles created in web200 - deactivated code by 
+* making it a comment until further instruction from the professor...?
+
 header {
     background-color: #3c275a;
     color: white;
@@ -180,3 +181,4 @@ footer a:hover {
     cursor: pointer;
 }
 
+*/
