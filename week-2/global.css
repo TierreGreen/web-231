@@ -1,8 +1,13 @@
-
+/**
+Title: Exercise 2.2
+Author: Professor Krasso
+Date: 17 January 2021
+Modified By: Tierre Green
+Description: JS styling global anchor styling from exercise 2.2.     
+*/
 
 body {
-    font-family: 'Oswald', 'Times New Roman', Times, sans-serif;
-    margin: 0;
+    font-family: 'Oswald', 'Verdana', Arial, sans-serif;
 }
 
 /**
@@ -23,6 +28,9 @@ body {
 .return-home:visited {
     color: #3C275A
 }
+
+/**
+* commenting code waiting on clarification form professor Krasso
 
 header {
     background-color: #3c275a;
@@ -177,3 +185,4 @@ footer a:hover {
     cursor: pointer;
 }
 
+*/
