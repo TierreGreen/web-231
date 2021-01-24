@@ -1,6 +1,14 @@
 
+/**
+; Title: Global.CSS
+; Author: Professor Chris Soriano
+; Date: January 24, 2021
+; Modified By: Tierre Green
+; Description: Global CSS stylings taken from assignment 9.2 from the web-200 class assignments.
+*/
+
 body {
-    font-family: 'Oswald', 'Times New Roman', Times, sans-serif;
+    font-family: 'Oswald', 'Verdana', Arial, sans-serif;
     margin: 0;
 }
 
@@ -26,6 +34,7 @@ body {
 /**
 * Start of Global css styles created in web200 - deactivated code by 
 * making it a comment until further instruction from the professor...?
+*/
 
 header {
     background-color: #3c275a;
@@ -37,6 +46,10 @@ header {
 h1 {
     font-weight: 400;
 }
+
+/**
+*stylings for navbar and anchors including hovering and visited
+*/
 
 #navbar {
     overflow: hidden;
@@ -59,11 +72,18 @@ h1 {
     color: #4F3674;
 }
 
+/** 
+*general container div stylings taken from web-200 css file
+*/
+
 #container {
     margin: 2% 5% 100px;
     padding: 10px;
 }
 
+/**
+*all card stylings including card content and card hovering styling
+*/
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
     transition: .3s;
@@ -84,6 +104,10 @@ h1 {
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,.2);
 }
+
+/**
+*Footer stylings including anchor stylings.
+*/
 
 footer {
     background-color: #4F3674;
@@ -111,6 +135,10 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/**
+*form and form field stylings.
+*/
+
 .form {
     display: inline-grid;
     grid-template-columns: auto;
@@ -119,6 +147,10 @@ footer a:hover {
 .form-field {
     padding: 20px;
 }
+
+/**
+*button stylings including hover styling.
+*/
 
 .btn {
     border: none;
@@ -132,15 +164,6 @@ footer a:hover {
     color: black;
 }
 
-.input {
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
 .btn-primary {
     background-color: #4F3674;
     color: white;
@@ -151,9 +174,26 @@ footer a:hover {
     color: #4F3674;
 }
 
+/**
+*input styling for border display characteristics and sizing.
+*/
+
+.input {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
 .full-width {
     width: 100%;
 }
+
+/**
+*styling from book list from assignment 9.2 of web-200.
+*/
 
 #books {
     border-collapse: collapse;
@@ -179,4 +219,3 @@ footer a:hover {
     color: #4F3674;
     cursor: pointer;
 }
-*/

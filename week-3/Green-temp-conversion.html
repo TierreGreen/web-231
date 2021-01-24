@@ -1,0 +1,94 @@
+<!--
+==============================================
+Title: Assignment 3.2 Temperature Conversion
+Author: Tierre Green
+Date: 23 January 2021
+Modified By: Tierre Green
+Description: Temperature Conversion App assignment with user input.
+==============================================     
+-->
+
+<!--
+===============================================
+Title: Assignment 9.2: Build a Web Page - Part 6
+Author: Professor Chris Soriano
+Date: January 23, 2021
+Modified By: Tierre Green
+Description: Assignment 9.2: Build a Web Page - Part 6 from web-200 class.
+===============================================
+-->
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+
+    <!--Assignment Stylesheet link-->
+        <link href="Green-temp-conversion.css" rel="stylesheet">
+
+    <!--global stylesheet per requirements-->
+        <link href="../global.css" rel="stylesheet">
+
+    <!--google fonts per course requirements.-->
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!--container div per course requirements-->
+        <div id="container">
+
+        <!--app header class per course requirements-->
+            <h1 class="app-header">Welcome to Temperature Conversion App!</h1>
+
+        <!--card 1 class div for fahrenheit input value card-->
+            <div class="card" id="input-card">
+
+            <!--card header label for conversion card-->
+                <div class="card-title">
+                    Fahrenheit to Celsius Converter
+                </div>
+
+            <!--Fahrenheit value input field with label element to ensure float left aspect inside card content div-->
+                <div class="card-content">
+                    <div class="form">
+                        <div class="form-field">
+
+                        <!--label and input for fahrenheit value.-->
+                           <label for="txtFahrenheit">Fahrenheit value:</label>
+                           <input type="number" class="input" id="txtFahrenheit" name="txtFahrenheit" value="0">
+                        </div>
+                    
+                    <!--button for conversion-->
+                        <div class="form-field">
+                            <button class="btn btn-primary full-width" id="convert-btn">Convert Temperature</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+
+        <!--conversion card div for conversion results with formulation produced after onclick action-->
+
+            <div class="card" id="results-card">
+
+            <!--card header label for conversion card-->
+                <div class="card-title">Conversion Results</div>
+        
+            <!--card content for conversion results formula for conversion results produces result here through javaScript binding results to card-content div-->
+                <div class="card-content" id="convert-content">
+                </div>
+
+            </div>
+            
+            <!--return anchor which takes user back to the landing page-->
+            <p><a class="return-home" href="https://tierregreen.github.io/web-231/">Return</a></p>
+
+            
+        <!--Script from temperature conversion file-->
+            <script src="Green-temp-conversion.js"></script>
+
+        </div>
+    </body>
+</html>
