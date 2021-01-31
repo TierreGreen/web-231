@@ -1,0 +1,28 @@
+/**
+;Title: Green-temp-conversion.css assignment 3.2
+;Author: Tierre Green
+;Date: January 24, 2021
+;Description: Assignment 3.2 css stylings.
+*/
+
+body {
+    font-family: 'Oswald', 'Verdana', Arial, sans-serif;
+}
+
+.app-header {
+    text-align: center;
+}
+
+.card {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#numResult {
+    text-align: center;
+    font-size: 28px;
+}
+
+.return-home {
+    margin-left: 25%
+}

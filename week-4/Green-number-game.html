@@ -1,0 +1,89 @@
+<!--
+==============================================
+Title: Assignment 4.2 Number Guessing Game
+Author: Tierre Green
+Date: 31 January 2021
+Modified By: Tierre Green
+Description: Number Guessing Game assignment with user input.
+==============================================     
+-->
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+
+    <!--Title for assignment-->    
+        <title>Assignment 4 - Number Guessing Game</title>
+
+    <!--Assignment Stylesheet link-->
+        <link href="Green-number-game.css" rel="stylesheet">
+
+    <!--global stylesheet per requirements-->
+        <link href="../global.css" rel="stylesheet">
+
+    <!--google fonts per course requirements.-->
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+    <!--container div per requirements-->
+        <div id="container">
+
+        <!--header with app header class per course requirements.-->
+            <h1 class="app-header">Welcome to the numbers game!</h1>
+
+        <!--card div 1 for guessing the number-->
+            <div class="card">
+
+            <!--card title div-->    
+                <div class="card-title">
+                    Pick a number between 1 and 10
+                </div>
+
+            <!--form div for inputing the guess-->
+                <div class="form">
+
+                <!--form field with label instructing user to guess the number in the field provided-->
+                    <div class="form-field">
+
+                    <!--label for input-->    
+                        <label>Guess the number:</label>
+
+                    <!--input for guessing the number-->
+                        <input type="number" class="input" id="txtMyNumber" name="txtMyNumber">
+                    </div>
+
+                <!--form-field div with btn for submitting the guess-->
+                    <div class="form-field">
+
+                    <!--bnt for submitting guess-->
+                        <button class="btn btn-primary full-width" id="btnSubmit">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+        <!--Card div for results -->
+            <div class="card" id="results-card">
+
+            <!--div for results card title header-->
+                <div class="card-title">
+                    Results
+                </div>
+
+            <!--div for card content for results-->
+                <div class="card-content" id="numResult">
+                </div>
+
+            </div>
+
+        <!--return anchor which takes user back to the landing page-->
+             <p><a class="return-home" href="https://tierregreen.github.io/web-231/">Return</a></p>
+
+        <!--script for submission of number and results string-->
+            <script src="Green-number-game.js"></script>
+
+        </div>
+    </body>
+</html>

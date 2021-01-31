@@ -8,11 +8,15 @@
 ;============================================
  */
 
- /**
+/**
+=============================================
 ; Title: Using onclick to create a dropdown button.
 ;Author: https://www.w3schools.com/jsref/event_onclick.asp
 ; Date: January 24, 2021
-  */
+; Modified By: Tierre Green
+; Description: onclick event
+=============================================
+*/
 
  /**
   * function to call results of formula which converts fahrenheit to celsius.
