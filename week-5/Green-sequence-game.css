@@ -1,0 +1,28 @@
+/**
+;Title: Green-sequence-game.css Assignment 5.2
+;Author: Tierre Green
+;Date: February 5, 2021
+;Description: Assignment 5.2 css stylings.
+*/
+
+body {
+    font-family: 'Oswald', 'Verdana', Arial, sans-serif;
+}
+
+.app-header {
+    text-align: center;
+}
+
+.card {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#numResult {
+    text-align: center;
+    font-size: 28px;
+}
+
+.return-home {
+    margin-left: 25%
+}

@@ -175,10 +175,19 @@ footer a:hover {
 }
 
 /**
-*input styling for border display characteristics and sizing.
+*input and dropdown menu styling for border display characteristics and sizing.
 */
 
 .input {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.drop-down-menu {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;

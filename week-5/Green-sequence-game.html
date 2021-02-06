@@ -1,0 +1,105 @@
+<!--
+=======================================
+; Title: Assignment 5.2 - Sequence Game
+; Author: Professor Richard Krasso
+; Modified by: Tierre Green
+; Description: Sequence Game created from 
+; instructions from assignment directions for 5.2
+=========================================
+-->
+
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+
+        <meta charset="UTF-8">
+
+    <!--Title of page-->
+        <title>Assignment 5.2 - Sequence Game</title>
+
+    <!--Global.css file stylesheet-->
+        <link href="../global.css" rel="Stylesheet">
+
+    <!--Assignment Specific css file for styling-->
+        <link href="Green-sequence-game.css" rel="Stylesheet">
+
+    <!--Google fonts stylesheet per course requirements-->
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    </head>
+
+<!--main body-->
+    <body>
+
+    <!--Container div per course requirements-->    
+        <div id="container">
+
+        <!--h1 with app header class per course requirements-->
+            <h1 class="app-header">Welcome to the sequence game!</h1>
+
+        <!--card 1 div with card class for sequence dropdown and button to display the selected sequence-->
+            <div class="card">
+
+            <!--card title div-->
+                <div class="card-title">
+                    Sequence Selection Form
+                </div>
+
+            <!--form class div with selection form and button for sequence display-->
+                <div class="form">
+
+                <!--form field with selection dropdown-->
+                    <div class="form-field">
+
+                    <!--Label for sequence selection dropdown-->
+                        <label>Choose a number sequence:</label>
+
+                    <!--dropdown selection-->
+                        <select id="sequence" class="drop-down-menu">
+
+                        <!--options 1 for standard sequence on load-->
+                            <option value="select">Select</option>
+
+                        <!--options 2 for fibonacci-->
+                            <option value="fibonacci">Fibonacci Sequence</option>
+
+                        <!--options 3 for standard sequence on load-->
+                            <option value="even">Even Numbers</option>
+                        
+                        <!--options 4 for standard sequence on load-->
+                            <option value="odd">Odd Numbers</option>
+                        </select>
+                        
+                    </div>
+
+                <!--form field div for button to display sequence on the results card-->
+                    <div class="form-field">
+
+                    <!--button for display of results-->
+                        <button class="btn btn-primary full-width" id="btnDisplaySequence">Display Sequence</button>
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+
+    <!--Card div for results -->
+        <div class="card" id="results-card">
+
+        <!--div for results card title header-->
+            <div class="card-title">
+                    Sequence Results
+            </div>
+
+        <!--div for card content for results-->
+            <div class="card-content" id="seqResults"></div>
+        </div>
+
+    <!--return anchor which takes user back to the landing page-->
+        <p><a class="return-home" href="https://tierregreen.github.io/web-231/">Return</a></p>
+
+    <!--script for sequence selection and results string-->
+        <script src="Green-sequence-game.js"></script>
+        </div>
+    </body>
+</html>
