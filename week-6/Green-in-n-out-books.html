@@ -1,0 +1,194 @@
+<!--
+=======================================
+; Title: Assignment 6.2 - In n out books
+; Author: Professor Richard Krasso
+; Modified by: Tierre Green
+; date: February 13, 2021
+; Description: In n out books
+; instructions from assignment directions for 6.2
+=========================================
+-->
+
+<!--
+=======================================
+; Title: HTML <tbody> Tag
+; Author: https://www.w3schools.com/tags/tag_tbody.asp
+; Modified by: Tierre Green
+; date: February 13, 2021
+; Description: tbody table html setup
+=========================================
+-->
+
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+
+        <meta charset="UTF-8">
+
+    <!--Title of page-->
+        <title>Assignment 6.2 - In n out books</title>
+
+    <!--Global.css file stylesheet-->
+        <link href="../global.css" rel="Stylesheet">
+
+    <!--Assignment Specific css file for styling-->
+        <link href="Green-in-n-out-books.css" rel="Stylesheet">
+
+    <!--Google fonts stylesheet per course requirements-->
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    </head>
+
+<!--main body-->
+    <body>
+
+    <!--Container div per course requirements-->    
+        <div id="container">
+
+        <!--h1 with app header class per course requirements-->
+            <h1 class="app-header">Welcome to In-N-Out-Books</h1>
+
+        <!--card 1 div with card class for choosing the selection dropdown and button to display the selected listing-->
+            <div class="card">
+
+            <!--card title div-->
+                <div class="card-title">
+                    My Favorites
+                </div>
+
+            <!--form class div with selection form and button for listing display-->
+                <div class="form">
+
+                <!--form field with selection dropdown-->
+                    <div class="form-field">
+
+                    <!--Label for listing selection dropdown-->
+                        <label>Choose a listing:</label>
+
+                    <!--dropdown selection-->
+                        <select id="favoriteList" class="drop-down-menu">
+
+                        <!--options 1 for listing on load-->
+                            <option class="option" value="select">--Select--</option>
+
+                        <!--options 2 for top 3 books-->
+                            <option class="option" value="books">Top 3 Favorite Books</option>
+
+                        <!--options 3 for top 3 authors selection-->
+                            <option class="option" value="authors">Top 3 Favorite Authors</option>
+                        </select>
+                        
+                    </div>
+
+                <!--form field div for button to display listing that was chosen-->
+                    <div class="form-field">
+
+                    <!--button for displaying listing-->
+                        <button class="btn btn-primary full-width" id="btnDisplayListing">Display Sequence</button>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+        <!--return anchor which takes user back to the landing page-->
+            <p><a class="return-home" href="https://tierregreen.github.io/web-231/">Return</a></p>
+
+            <br><br>
+
+    <!--Card div for favorite books -->
+        <div class="card" id="favBooks">
+
+        <!--div for results card title header-->
+            <div class="card-title">
+                    Top 3 Favorite Books
+            </div>
+
+        <!--div for card content for results-->
+            <div class="card-content">
+
+            <!--Table with top 3 favorite books-->
+                <table class="table">
+                
+                <!--table headers labeling isbn title and total pages-->
+                    <tr>
+                        <th>ISBN</th>
+                        <th>Title</th>
+                        <th>Pages</th>
+                    </tr>
+                
+                    <tbody>
+                    <!--isbn's titles and page amounts for each of my top 3 favorite books. row 1 assassin's apprentice-->
+                        <tr>
+                            <td id="txtAssassinsApprenticeISBN"></td>
+                            <td id="txtAssassinsApprenticeTitle"></td>
+                            <td id="txtAssassinsApprenticePages"></td>
+                        </tr>
+
+                    <!--isbn's titles and page amounts for each of my top 3 favorite books. row 2 talon of god-->
+                        <tr>
+                            <td id="txtTalonOfGodISBN"></td>
+                            <td id="txtTalonOfGodTitle"></td>
+                            <td id="txtTalonOfGodPages"></td>   
+                        </tr>
+                        
+                    <!--isbn's titles and page amounts for each of my top 3 favorite books. row 3 The Hobbit-->
+                        <tr>
+                            <td id="txtTheHobbitISBN"></td>
+                            <td id="txtTheHobbitTitle"></td>
+                            <td id="txtTheHobbitPages"></td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+
+        <!--Card div for favorite books -->
+        <div class="card" id="favAuthors">
+
+            <!--div for results card title header-->
+                <div class="card-title">
+                        Top 3 Favorite Authors
+                </div>
+    
+            <!--div for card content for results-->
+                <div class="card-content">
+    
+                <!--Table with top 3 favorite books-->
+                    <table class="table">
+                    
+                    <!--table headers labeling name of author and genre-->
+                        <tr>
+                            <th>Name</th>
+                            <th>Genre</th>
+                        </tr>
+                        <tbody>
+                        <!--name of author and genre they write in for each of my top 3 favorite Authors. row 1 Robin Hobb-->
+                            <tr>
+                                <td id="txtRobinHobbName"></td>
+                                <td id="txtRobinHobbGenre"></td>
+                            </tr>
+        
+                        <!--name of author and genre they write in for each of my top 3 favorite Authors. row 2 Wesley Snipes-->
+                            <tr>
+                                <td id="txtWesleySnipesName"></td>
+                                <td id="txtWesleySnipesGenre"></td>
+                            </tr>
+                            
+                        <!--isbn's titles and page amounts for each of my top 3 favorite books. row 3 The Hobbit-->
+                            <tr>
+                                <td id="txtJRRTolkienName"></td>
+                                <td id="txtJRRTolkienGenre"></td>
+                            </tr>
+                        </tbody>
+    
+                    </table>
+                </div>
+            </div>
+
+    <!--script for sequence selection and results string-->
+        <script src="Green-in-n-out-books.js"></script>
+        </div>
+    </body>
+</html>

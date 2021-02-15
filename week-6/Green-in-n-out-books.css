@@ -1,0 +1,83 @@
+/**
+;Title: Green-in-n-out-books.css Assignment 6.2
+;Author: Richard Krasso
+; Modified by: Tierre
+;Date: February 13, 2021
+;Description: Assignment 6.2 css stylings.
+*/
+
+/**
+* styling for body of page, font families.
+*/
+
+body {
+    font-family: 'Oswald', 'Verdana', Arial, sans-serif;
+}
+
+/**
+* styling for app-header div per course standards centering app header text. 
+*/
+.app-header {
+    text-align: center;
+}
+
+/**
+* styling for card class divs per course standards setting the margin of the page.
+*/
+.card {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/**
+*added padding to card content to improve visual match to assignment specs.
+*/
+.card-content {
+    padding: 2px 16px;
+}
+
+/**
+* stylings for tables to establish width and and margins an border collapse
+*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/**
+*table header to create styling with padding text align, background color and text color
+*/
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: white;
+    background-color: #4F3674;
+}
+
+/**
+*setting table data and header border to solid 1 px and color #ddd
+*/
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/**
+*setting hover background color of table rows color of text and cursor to pointer.
+*/
+tr:hover {
+    background: #d6a800;
+    color: #4F3674;
+    cursor: pointer;
+}
+
+
+/**
+* return to landing page anchor position on the page.
+*/
+.return-home {
+    margin-left: 25%
+}
