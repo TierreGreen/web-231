@@ -1,0 +1,299 @@
+<!--
+=======================================
+; Title: Assignment 7.2 - In n out books
+; Author: Professor Richard Krasso
+; Modified by: Tierre Green
+; date: February 16, 2021
+; Description: Assignment 7 - Javazon
+; instructions from assignment directions for 7.2
+=========================================
+-->
+
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+    <!--TItle of page-->
+        <title>Assignment 7.2 - Javazon</title>
+
+    <!--global.css stylesheet per course requirements-->
+        <link href="../global.css" rel="Stylesheet">
+
+    <!--link to assignment stylesheet for 7.2 javazon-->
+        <link href="Green-javazon.css" rel="Stylesheet">
+
+    <!--link to google fonts standard for the course-->
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+        
+    </head>
+
+<!--Main body of page-->
+    <body>
+
+    <!--container div per course requirements-->
+        <div class="container">
+
+        <!--header per course requirements with and id of app-header per course requirements-->
+            <h1 class="app-header">Welcome to the Javazon App!</h1>
+
+        <!--card div for javazon selection form where user can select the listing they wish to display.-->
+            <div class="card">
+
+            <!--card title div-->
+                <div class="card-title">
+                    Javazon Selection Form
+                </div>
+
+            <!--div for card content label and selection field.-->
+                <div class="card-content">
+
+                <!--form div with selection form and button for displaying listing-->
+                    <div class="form">
+
+                    <!--form field for selections to be made by user-->
+                        <div class="form-field">
+                    
+                        <!--label for dropdown field for the selection for displaying listing.-->
+                            <label>Choose a listing: </label>
+
+                        <!--selection element for selecting particular option-->
+                            <select id="listing" class="drop-down-menu">
+
+                            <!--default option of select displayed on initial load-->
+                                <option class="option" value="select">--Select--</option>
+
+                            <!--Products option for selecting product listing-->
+                                <option class="option" value="products">Products</option>
+
+                            <!--Services option for selecting services-->
+                                <option class="option" value="services">Services</option>
+
+                            <!--employees option for selecting listing of the employees-->
+                                <option class="option" value="employees">Employees</option>
+                            </select>
+                        </div>
+                    
+                    <!--form field div for button to display the listing-->
+                        <div class="form-field">
+
+                        <!--button element for displaying listing-->
+                            <button class="btn btn-primary full-width" id="btnDisplayListing">Display Listing</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+        <!--return anchor which takes user back to the landing page-->
+            <p><a class="return-home" href="https://tierregreen.github.io/web-231/">Return</a></p>
+
+            <br>
+
+        <!--div card for products-->
+            <div class="card" id="productsSelect">
+
+            <!--products card title-->
+                <div class="card-title">
+                    Javazon Products
+                </div>
+
+            <!--div for card content for products -->
+                <div class="card-content">
+
+                <!--table for products-->
+                    <table class="table">
+
+                    <!--table headers labeling product information-->
+                        <tr>
+                            <th>Product ID</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total Value</th>
+                        </tr>
+
+                    <!--tbody for product data for table-->
+                        <tbody>
+
+                        <!--table data for html and css design product-->
+                            <tr>
+                                <td id="txtHtmlCssID"></td>
+                                <td id="txtHtmlCssDescription"></td>
+                                <td id="txtHtmlCssPrice"></td>
+                                <td id="txtHtmlCssQuantity"></td>
+                                <td id="txtHtmlCssTV"></td>
+                            </tr>
+
+                        <!--table data for JS definitive guide-->
+                            <tr>
+                                <td id="txtJSGuideID"></td>
+                                <td id="txtJSGuideDescription"></td>
+                                <td id="txtJSGuidePrice"></td>
+                                <td id="txtJSGuideQuantity"></td>
+                                <td id="txtJSGuideTV"></td>
+                            </tr>
+
+                        <!--table data for Learning JS Design patterns-->
+                            <tr>
+                                <td id="txtLearnJSDesignID"></td>
+                                <td id="txtLearnJSDesignDescription"></td>
+                                <td id="txtLearnJSDesignPrice"></td>
+                                <td id="txtLearnJSDesignQuantity"></td>
+                                <td id="txtLearnJSDesignTV"></td>
+                            </tr>
+
+                        <!--Table data for express in action product-->
+                            <tr>
+                                <td id="txtExpressID"></td>
+                                <td id="txtExpressDescription"></td>
+                                <td id="txtExpressPrice"></td>
+                                <td id="txtExpressQuantity"></td>
+                                <td id="txtExpressTV"></td>
+                            </tr>
+
+                        <!--table fro mongoDB guide-->
+                            <tr>
+                                <td id="txtMongoID"></td>
+                                <td id="txtMongoDescription"></td>
+                                <td id="txtMongoPrice"></td>
+                                <td id="txtMongoQuantity"></td>
+                                <td id="txtMongoTV"></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        <!--card div for javazon services table card-->
+            <div class="card" id="servicesSelect">
+
+            <!--div for card title for javazon services-->
+                <div class="card-title">
+                    Javazon Services
+                </div>
+
+                <!--div for card content for services -->
+                <div class="card-content">
+
+                <!--table for services-->
+                    <table class="table">
+
+                    <!--table headers labeling service information-->
+                        <tr>
+                            <th>Service ID</th>
+                            <th>Description</th>
+                            <th>Hourly Rate</th>
+                            <th>Minimum Billable Hours</th>
+                        </tr>
+
+                    <!--table body for Javazon Services -->
+                        <tbody>
+
+                        <!--table data for website design-->
+                            <tr>
+                                <td id="txt100ID"></td>
+                                <td id="txt100Description"></td>
+                                <td id="txt100HR"></td>
+                                <td id="txt100MBH"></td>
+                            </tr>
+
+                        <!--table data for devops consulting-->
+                            <tr>
+                                <td id="txt101ID"></td>
+                                <td id="txt101Description"></td>
+                                <td id="txt101HR"></td>
+                                <td id="txt101MBH"></td>
+                            </tr>
+
+                        <!--table data for database design-->
+                            <tr>
+                                <td id="txt102ID"></td>
+                                <td id="txt102Description"></td>
+                                <td id="txt102HR"></td>
+                                <td id="txt102MBH"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        <!--div for Javazon Employees Card-->
+            <div class="card" id="employeesSelect">
+
+            <!--div for card title-->
+                <div class="card-title">
+                    Javazon Employees
+                </div>
+
+            <!--div for card content-->
+                <div class="card-content">
+
+                <!--table for javazon employees-->
+                    <table class="table">
+
+                    <!--table headers for Javazon employee card-->
+                        <tr>
+                            <th>Employee ID</th>
+                            <th>Last Name</th>
+                            <th>First Name</th>
+                            <th>Salary</th>
+                        </tr>
+
+                    <!--table body for table data for employees-->
+                        <tbody>
+
+                        <!--data table with employee beethoven information-->
+                            <tr>
+                                <td id="txtBeetID"></td>
+                                <td id="txtBeetLastName"></td>
+                                <td id="txtBeetFirstName"></td>
+                                <td id="txtBeetSalary"></td>
+                            </tr>
+
+                        <!--data table with employee Bach information-->
+                            <tr>
+                                <td id="txtBachID"></td>
+                                <td id="txtBachLastName"></td>
+                                <td id="txtBachFirstName"></td>
+                                <td id="txtBachSalary"></td>
+                            </tr>
+
+                        <!--data table with employee mozart information-->
+                            <tr>
+                                <td id="txtMozaID"></td>
+                                <td id="txtMozaLastName"></td>
+                                <td id="txtMozaFirstName"></td>
+                                <td id="txtMozaSalary"></td>
+                            </tr>
+
+                        <!--data table with employee brahms information-->
+                            <tr>
+                                <td id="txtBrahID"></td>
+                                <td id="txtBrahLastName"></td>
+                                <td id="txtBrahFirstName"></td>
+                                <td id="txtBrahSalary"></td>
+                            </tr>
+                        
+                        <!--data table with employee Haydn information-->
+                            <tr>
+                                <td id="txtHaydID"></td>
+                                <td id="txtHaydLastName"></td>
+                                <td id="txtHaydFirstName"></td>
+                                <td id="txtHaydSalary"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        
+    <!--script for selection of specific results string-->
+            <script src="Green-javazon.js"></script>
+        </div>
+    </body>
+</html>
