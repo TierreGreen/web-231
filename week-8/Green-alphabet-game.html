@@ -1,0 +1,120 @@
+<!--
+=======================================
+; Title: Assignment 8.2 - In n out books
+; Author: Professor Richard Krasso
+; Modified by: Tierre Green
+; date: February 28, 2021
+; Description: Assignment 8 Alphabet Game
+; instructions from assignment directions for 8.2
+=========================================
+-->
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+    <!--Title og the page-->
+        <title>Assignment 8.2 - Alphabet Game</title>
+
+    <!--global.css link for styling purposes per course requirements-->
+        <link href="../global.css" rel="Stylesheet">
+
+    <!--Link to assignment specific styling file-->
+        <link href="Green-alphabet-game.CSS" rel="Stylesheet">
+
+    <!--Link to google fonts per course requirements-->
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    </head>
+
+<!--Main body of page-->
+    <body>
+
+    <!--Container div per course requirements-->
+        <div class="container">
+
+        <!--h1 app-header class per course requirements-->
+            <h1 class="app-header">
+                Welcome to the Alphabet Game!
+            </h1>
+
+        <!--card div created for input of number by user to produce letter result-->
+            <div class="card">
+
+            <!--card title div to name the first card-->
+                <div class="card-title">
+                    Alphabet Number Form
+                </div>
+
+            <!--card content div for label and input element of the form-->
+                <div class="card-content">
+
+                <!--form div for form field-->
+                    <div class="form">
+
+                    <!--form field div for input and label-->
+                        <div class="form-field">
+
+                        <!--the label for the input element-->
+                            <label>Alphabet Letter Position: </label>
+
+                        <!--input field to add what number for selecting which letter of the alphabet you want to display in the results-->
+                            <input class="input" id="txtPosition" type="number">
+                        </div>
+
+                    <!--form field for the button-->
+                        <div class="form-field">
+
+                        <!--button for finding the letter postion-->
+                            <button class="btn btn-primary full-width" id="btnFindLetter">
+                                Find Letter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+        <!--the return anchor returning to the index.html landing page.-->
+            <p><a class="return-home" href="https://tierregreen.github.io/web-231/">Return</a></p>
+
+            <br>
+
+        <!--letters of the alphabet card-->
+            <div class="card">
+
+            <!--card title div-->
+                <div class="card-title">
+                    Letters in the Alphabet
+                </div>
+
+            <!--card content div for letters of the Alphabet-->
+                <div class="card-content" id="alphabet" type="alphabet">
+                </div>
+            </div>
+
+            <br>
+
+        <!--card div for results-->
+            <div class="card">
+            
+            <!--div for card title for results card-->
+                <div class="card-title">
+                    Results
+                </div>
+
+            <!--div for card content to anchor results to-->
+                <div class="card-content" id="alphabet-letter">
+                </div>
+            </div>
+
+        <!--script file for Green-alphabet-->
+            <script src="Green-alphabet-game.JS"></script>
+        </div>
+
+    </body>
+</html>
