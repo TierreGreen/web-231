@@ -16,6 +16,9 @@
 
         <meta charset="UTF-8">
 
+    <!--TItle of the assignment-->
+        <title>Assignment 9.2 - Final: Card Game</title>
+
     <!--Link to global.CSS file-->
         <link href="../global.css" rel="Stylesheet">
 
@@ -33,6 +36,11 @@
     <!--container div per course requirements-->
         <div class="container">
 
+        <!--Headers with game title with app-header class-->
+            <h1 class="app-header">
+                Welcome to the Card Game!
+            </h1>
+
             <!--Card div for card dealer and button calling shuffled cards-->
             <div class="card">
 
@@ -44,8 +52,16 @@
             <!--card-content div which will include the button-->
                 <div class="card-content" class="Dealer">
 
-                <!--button for dealing the cards.-->
-                    <button class="btn btn-primary full-width" id="btnDealCards">Deal Cards</button>
+                <!--form div-->
+                    <div class="form">
+                        
+                    <!--form-field div per course general practices-->
+                        <div class="fomr-field">
+
+                        <!--button for dealing the cards.-->
+                            <button class="btn btn-primary full-width" id="btnDealCards">Deal Cards</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -65,9 +81,15 @@
                 </div>
 
             <!--card content div-->
-                <div class="card-content" class="Card">
+                <div class="card-content">
+
+                <!--Card div for where the cards will appear-->
+                    <div class="Card">
+                    </div>
                 </div>
             </div>
+
+            <script src="Green-card-game.js"></script>
 
         </div>
     </body>    
