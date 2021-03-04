@@ -42,9 +42,13 @@ class Dealer {
 
     //shuffle function to shuffle the 52 cards
         function shuffle() {
-            
-            for (let firstCard = 0; firstCard < this.CARD_COUNT.length; firstCard++) {
-
+            let firstCard, secondCard, tempCard;
+            for (let count = 0; count < this.CARD_COUNT.length; count++) {
+                firstCard = Math.floor(Math.random() * this.CARD_COUNT.length);
+                secondCard = Math.floor(Math.random() * this.CARD_COUNT.length)
+                tempCard = this.cards[firstCard];
+                this.cards[firstCard] = this.cards[secondCard];
+                this.cards[secondCard] = tempCard
             }
 
         }
