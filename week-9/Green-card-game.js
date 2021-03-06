@@ -20,9 +20,6 @@ class Dealer {
     constructor() {
     this.getDeckOfCards();
 
-
-
-
     }
     //creating a card count variable for the 52 cards in the deck.
     CARD_COUNT = 52;
@@ -44,13 +41,7 @@ class Dealer {
         for (let count = 0; count < this.CARD_COUNT; count++) {
 
             this.cards[count] = new Card(this.faces[count % 13], this.suits[Math.floor(count / 13)]);
-
-            //deck.push(Card);
         }
-        //console.log(`created a deck of ${deck.length}`);
-        //console.log(deck);
-
-        //return deck;
     }
 
     //shuffle function to shuffle the 52 cards
@@ -106,12 +97,6 @@ class Dealer {
                     cardOutPutWithIcon += this.buildPlayingCard('card', "mdi mdi-cards-spade", "black", "black");
             }
         });
-
-
-
-
-
-
             document.getElementById("player-cards").innerHTML = cardOutPutWithIcon;
 
 
