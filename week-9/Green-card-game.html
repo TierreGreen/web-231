@@ -26,7 +26,9 @@
         <link href="Green-card-game.css" rel="Stylesheet">
 
     <!--Link to google fonts per course requirements-->
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="Stylesheet">
+
+        <link href="https://pictogrammers.github.io/@mdi/font/5.4.55/">
 
     </head>
 
@@ -65,23 +67,26 @@
 
             <br>
 
-        <!--card div for shuffled cards-->
-            <div class="card">
+        <!--player card container-->
+            <div id="player-card-container">
+            <!--card div for shuffled cards-->
+                <div class="card">
 
-            <!--card title div-->
-                <div class="card-title">
-                    Shuffled Cards
-                </div>
+                <!--card title div-->
+                    <div class="card-title">
+                        Shuffled Cards
+                    </div>
 
-            <!--card content div-->
-                <div class="card-content">
+                <!--card content div-->
+                    <div class="card-content" id="player-cards">
 
-                <!--Card div for where the cards will appear-->
-                    <div class="Card">
+                    <!--Card div for where the cards will appear-->
+                        <div class="card player-card">
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
             <script src="Green-card-game.js"></script>
 
         </div>

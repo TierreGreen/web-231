@@ -38,12 +38,23 @@ body {
 }
 
 /**
-*setting the fond size and alignment of the text for the card content of the alphabet and alphabet-letter cards.
+* player card css per assignment instructions.
 */
-#alphabet, #alphabet-letter {
-    font-size: 28px;
+
+.player-card {
     text-align: center;
-} 
+}
+
+/**
+*setting the grid with padding, number of columns and grid gaps.
+*/
+#player-card-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+    grid-gap: 10px;
+}
+
 
 /**
 * return to landing page anchor position on the page.
