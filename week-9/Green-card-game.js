@@ -30,7 +30,7 @@ class Dealer {
     //card deck faces array
     faces = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
 
-    //suits variabel with all suits Array
+    //suits variable with all suits Array
     suits = ["Hearts", "Diamonds", "Clubs", "Spades"];
 
     //get deck of cards function
@@ -58,11 +58,12 @@ class Dealer {
         this.cardOutput();
     }
 
-    buildPlayingCard(card, suitIcon, faceColor, suitColor) {
+    buildPlayingCard(cardFace, suitIcon, faceColor, suitColor) {
+        console.log("buildCard Log", cardFace)
 
         return `<div class="card player-card">
                     <div class="card-title" style="text-align:left; font-size:20px; padding-left:10px; color:${faceColor};">
-                    ${card.faces}
+                    ${cardFace}
                        
                      </div>
                      <div class="card-content" style="font-size:28px; padding-bottom:25px">
@@ -82,28 +83,23 @@ class Dealer {
 
                 case "Hearts":
 
-                    cardOutPutWithIcon += this.buildPlayingCard('card', "mdi mdi-cards-heart", "red", "red");
+                    cardOutPutWithIcon += this.buildPlayingCard(card.faces, "mdi mdi-cards-heart", "red", "red");
                     break;
 
                 case "Diamonds":
-                    cardOutPutWithIcon += this.buildPlayingCard('card', "mdi mdi-cards-diamond", "red", "red");
+                    cardOutPutWithIcon += this.buildPlayingCard(card.faces, "mdi mdi-cards-diamond", "red", "red");
                     break;
 
                 case "Clubs":
-                    cardOutPutWithIcon += this.buildPlayingCard('card', "mdi mdi-cards-club", "black", "black");
+                    cardOutPutWithIcon += this.buildPlayingCard(card.faces, "mdi mdi-cards-club", "black", "black");
                     break;
 
                 case "Spades":
-                    cardOutPutWithIcon += this.buildPlayingCard('card', "mdi mdi-cards-spade", "black", "black");
+                    cardOutPutWithIcon += this.buildPlayingCard(card.faces, "mdi mdi-cards-spade", "black", "black");
             }
         });
             document.getElementById("player-cards").innerHTML = cardOutPutWithIcon;
-
-
-
     }
-
-
 }
 
 //onclick event to allow button to execute action by dealer.

@@ -1,0 +1,14 @@
+{
+  "name": "week-9",
+  "version": "1.0.0",
+  "description": "final project",
+  "main": "Green-card-game.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Tierre Green",
+  "license": "ISC",
+  "dependencies": {
+    "@mdi/font": "npm:undefined@*"
+  }
+}
