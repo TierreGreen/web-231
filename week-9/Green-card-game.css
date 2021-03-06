@@ -62,3 +62,8 @@ body {
 .return-home {
     margin-left: 25%
 }
+
+br {
+    padding: 0%;
+    margin: 0%;
+}
