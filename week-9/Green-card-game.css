@@ -1,10 +1,18 @@
 /**
 ;Title: Green-card-game Assignment 9.2
-;Author: Richard Krasso
-; Modified by: Tierre
+;Author: Richard Krasso https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-template-columns1
+; Modified by: Tierre Green
 ;Date: March 3, 2021
 ;Description: Assignment 8.2 css stylings copied to this css file
 ;but deleted some that were not needed
+*/
+
+/**
+;Title: CSS Grid Container
+;Author: https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-template-columns1
+; Modified by: Tierre Green
+;Date: March 3, 2021
+;Description: css styling for player-card-container 
 */
 
 /**
@@ -52,6 +60,7 @@ body {
     display: grid;
     grid-template-columns: auto auto auto auto;
     padding: 10px;
+    grid-gap: 10px 10px;
 }
 
 /**
